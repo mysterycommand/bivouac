@@ -5,7 +5,7 @@ define(function(require) {
 
     describe('App', function() {
         it('should exist', function() {
-            return !! App;
+            expect(App).to.exist;
         });
     });
 });
