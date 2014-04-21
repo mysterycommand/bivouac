@@ -32,4 +32,9 @@ module.exports = function(grunt) {
         'jshint'
     ]);
 
+    grunt.registerTask('serve', [
+        'jshint',
+        'connect:livereload'
+    ]);
+
 };
