@@ -8,12 +8,13 @@ module.exports = {
     },
     livereload: {
         options: {
-            middleware: function(connect) {
-                return [
-                    connect.static('<%= config.temp %>'),
-                    connect().use('/bower_components', connect.static('./bower_components')),
-                    connect.static('<%= config.app %>')
-                ];
+            base: [
+                '<%= config.temp %>',
+                '<%= config.app %>'
+            ],
+            middleware: function(connect, options, middlewares) {
+                middlewares.push(connect().use('/bower_components', connect.static('./bower_components')));
+                return middlewares;
             }
         }
     },
@@ -21,13 +22,14 @@ module.exports = {
         options: {
             open: false,
             port: 9001,
-            middleware: function(connect) {
-                return [
-                    connect.static('<%= config.temp %>'),
-                    connect.static('<%= config.test %>'),
-                    connect().use('/bower_components', connect.static('./bower_components')),
-                    connect.static('<%= config.app %>')
-                ];
+            base: [
+                '<%= config.temp %>',
+                '<%= config.test %>',
+                '<%= config.app %>'
+            ],
+            middleware: function(connect, options, middlewares) {
+                middlewares.push(connect().use('/bower_components', connect.static('./bower_components')));
+                return middlewares;
             }
         }
     },

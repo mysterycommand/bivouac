@@ -34,7 +34,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask('serve', [
         'jshint',
-        'connect:livereload'
+        'connect:livereload',
+        'watch'
     ]);
 
 };
