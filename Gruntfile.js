@@ -47,7 +47,11 @@ module.exports = function(grunt) {
         'connect:dist:keepalive'
     ]);
 
-    grunt.registerTask('test', []);
+    grunt.registerTask('test', [
+        'clean:dev',
+        'connect:test',
+        'mocha'
+    ]);
 
     grunt.registerTask('default', [
         'jshint',
