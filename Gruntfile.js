@@ -38,4 +38,9 @@ module.exports = function(grunt) {
         'watch'
     ]);
 
+    grunt.registerTask('build', [
+        'jshint',
+        'requirejs'
+    ]);
+
 };
