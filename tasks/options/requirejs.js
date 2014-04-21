@@ -6,7 +6,7 @@ module.exports = {
         options: {
             baseUrl: '<%= config.app %>/scripts',
             mainConfigFile: '<%= config.app %>/scripts/config.js',
-            name: '../bower_components/almond/almond',
+            name: '../../node_modules/almond/almond',
             out: '<%= config.dist %>/js/app.min.js',
             insertRequire: ['main'],
 
