@@ -24,8 +24,7 @@ module.exports = {
             port: 9001,
             base: [
                 '<%= config.temp %>',
-                '<%= config.test %>',
-                '<%= config.app %>'
+                '.'
             ],
             middleware: function(connect, options, middlewares) {
                 middlewares.push(connect().use('/bower_components', connect.static('./bower_components')));

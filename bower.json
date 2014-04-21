@@ -3,6 +3,8 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "requirejs": "~2.1.11"
+    "requirejs": "~2.1.11",
+    "mocha": "~1.18.2",
+    "chai": "~1.9.1"
   }
 }
