@@ -11,3 +11,17 @@ An ultra-minimal webapp project setup. Uses Thomas Boyt's [More maintainable Gru
 4. Setup your Gruntfile and create your first options file (I started with the `jshint` task).
 5. Create your `./app`, `./app/images/`, `.app/scripts/`, and `.app/styles/` directories, and their respective files (again, I just copied all this from the [Yeoman webapp generator](https://github.com/yeoman/generator-webapp)'s defaults as a starting place).
 6. Gut the `index.html` file. I think it's got too much in it to start, and I don't want jQuery by default.
+7. Get some dependencies:
+```javascript
+npm install -D grunt-contrib-requirejs
+npm install -D almond
+bower install -D requirejs
+```
+8. Create a tasks/options file for requirejs that builds your code with almond, and puts it in dist. Require your config file via data-main in your index page. Get the build working.
+9. Add some more dependencies to get an initial build working:
+```javascript
+npm install -D grunt-contrib-clean
+npm install -D grunt-contrib-connect
+npm install -D grunt-contrib-copy
+npm install -D grunt-contrib-watch
+```
