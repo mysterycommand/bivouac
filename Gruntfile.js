@@ -28,10 +28,6 @@ module.exports = function(grunt) {
         }
     }, loadConfig('./tasks/options/')));
 
-    grunt.registerTask('default', [
-        'jshint'
-    ]);
-
     grunt.registerTask('serve', [
         'jshint',
         'clean:dev',
@@ -39,7 +35,7 @@ module.exports = function(grunt) {
         'watch'
     ]);
 
-    grunt.registerTask('build', [
+    grunt.registerTask('default', [
         'jshint',
         'clean:dist',
         'requirejs',
