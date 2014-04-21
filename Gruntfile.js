@@ -34,12 +34,14 @@ module.exports = function(grunt) {
 
     grunt.registerTask('serve', [
         'jshint',
+        'clean:dev',
         'connect:livereload',
         'watch'
     ]);
 
     grunt.registerTask('build', [
         'jshint',
+        'clean:dist',
         'requirejs',
         'copy'
     ]);
