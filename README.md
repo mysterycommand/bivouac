@@ -35,7 +35,11 @@ An ultra-minimal webapp project setup. Uses Thomas Boyt's [More maintainable Gru
     npm install -g generator-travis-ci
     yo travis-ci:gh-pages
     ```
-12. Get tests setup:
+12. Get test dependencies:
 
     ```bash
+    bower install -D mocha
+    bower install -D chai
+    npm install -D grunt-mocha
     ```
+13. Create a test directory, and an index.html to serve the tests. Add the mocha CSS and JS, and chai JS in the head, and set them up in the body. Put your tests under test/spec. Maybe use a folder structure that matches your project's class files.
