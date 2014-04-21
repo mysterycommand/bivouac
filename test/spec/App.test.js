@@ -1,3 +1,5 @@
+/* jshint expr: true */
+
 'use strict';
 
 define(function(require) {

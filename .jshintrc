@@ -21,6 +21,7 @@
     "globals": {
         "define": true,
         "describe": true,
+        "expect": true,
         "it": true
     }
 }
