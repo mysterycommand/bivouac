@@ -5,7 +5,7 @@
 language:
     node_js
 node_js:
-    - 0.8
+    - "0.10"
 notifications:
     irc: "irc.freenode.org#generator-travis-ci"
 branches:
@@ -50,6 +50,6 @@ after_success:
     - git add -f .
     - git config user.email "matt@mysterycommand.com"
     - git config user.name "Matt Hayes"
-    - git commit -am "adding the yeoman build files to gh-pages [ci skip]"
+    - git commit -am "Travis build ${TRAVIS_BUILD_NUMBER}. [ci skip]"
     # Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
     - git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} HEAD:gh-pages > /dev/null 2>&1
