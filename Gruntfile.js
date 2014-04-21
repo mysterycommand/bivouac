@@ -35,11 +35,23 @@ module.exports = function(grunt) {
         'watch'
     ]);
 
-    grunt.registerTask('default', [
-        'jshint',
+    grunt.registerTask('build', [
         'clean:dist',
         'requirejs',
-        'copy'
+        'copy',
+        'usereplace'
     ]);
 
+    grunt.registerTask('demo', [
+        'build',
+        'connect:dist:keepalive'
+    ]);
+
+    grunt.registerTask('test', []);
+
+    grunt.registerTask('default', [
+        'jshint',
+        'test',
+        'build'
+    ]);
 };

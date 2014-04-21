@@ -26,11 +26,16 @@ An ultra-minimal webapp project setup. Uses Thomas Boyt's [More maintainable Gru
     npm install -D grunt-contrib-connect
     npm install -D grunt-contrib-copy
     npm install -D grunt-contrib-watch
+    npm install -D grunt-usereplace
     ```
-10. Get the Travis CI generator, and run it:
+10. Update the index file to replace the require/data-main script tag with a reference to the r.js'd script.
+11. Get the Travis CI generator, and run it:
 
     ```bash
     npm install -g generator-travis-ci
     yo travis-ci:gh-pages
     ```
-11.
+12. Get tests setup:
+
+    ```bash
+    ```
