@@ -2,5 +2,7 @@
   "name": "bivouac",
   "private": true,
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "requirejs": "~2.1.11"
+  }
 }
