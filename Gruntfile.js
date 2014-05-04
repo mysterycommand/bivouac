@@ -38,9 +38,12 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'useminPrepare',
         'modernizr',
         'requirejs',
         'copy',
+        'rev',
+        'usemin',
         'usereplace'
     ]);
 
