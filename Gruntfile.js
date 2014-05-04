@@ -31,6 +31,7 @@ module.exports = function(grunt) {
     grunt.registerTask('serve', [
         'jshint',
         'clean:dev',
+        'sass',
         'connect:livereload',
         'watch'
     ]);

@@ -11,10 +11,10 @@ module.exports = {
     gruntfile: {
         files: ['Gruntfile.js']
     },
-    // styles: {
-    //     files: ['<%= config.app %>/styles/{,*/}*.css'],
-    //     tasks: ['newer:copy:styles', 'autoprefixer']
-    // },
+    styles: {
+        files: ['<%= config.app %>/styles/{,*/}*.scss'],
+        tasks: ['sass']
+    },
     livereload: {
         options: {
             livereload: '<%= connect.options.livereload %>'
