@@ -6,7 +6,7 @@ module.exports = {
         'devFile' : 'bower_components/modernizr/modernizr.js',
 
         // [REQUIRED] Path to save out the built file.
-        'outputFile' : '<%= config.dist %>/js/modernizr.js',
+        'outputFile' : '<%= config.dist %>/js/modernizr.min.js',
 
         // Based on default settings on http://modernizr.com/download/
         'extra' : {
