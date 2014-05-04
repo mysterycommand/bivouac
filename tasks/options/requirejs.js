@@ -10,7 +10,7 @@ module.exports = {
             out: '<%= config.dist %>/js/app.min.js',
             insertRequire: ['main'],
 
-            optimize: 'none',
+            optimize: 'uglify',
             preserveLicenseComments: false,
             useStrict: true
         }
