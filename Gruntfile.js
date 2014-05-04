@@ -26,7 +26,7 @@ module.exports = function(grunt) {
             dist: 'dist',
             temp: '.tmp'
         }
-    }, loadConfig('./tasks/options/')));
+    }, loadConfig('./tasks/')));
 
     grunt.registerTask('serve', [
         'jshint',
