@@ -5,6 +5,7 @@
   "devDependencies": {
     "requirejs": "~2.1.11",
     "mocha": "~1.18.2",
-    "chai": "~1.9.1"
+    "chai": "~1.9.1",
+    "modernizr": "~2.8.1"
   }
 }
