@@ -2,8 +2,8 @@
 
 module.exports = {
     options: {
-        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
+        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/img']
     },
     html: ['<%= config.dist %>/{,*/}*.html'],
-    css: ['<%= config.dist %>/styles/{,*/}*.css']
+    css: ['<%= config.temp %>/styles/{,*/}*.css']
 };
